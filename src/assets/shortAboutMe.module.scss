@@ -1,0 +1,194 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 50px;
+    gap: 50px;
+    background-color: darkcyan;
+    height: 500px;
+    margin-top: 65px;
+
+    .description1 {
+        text-align: justify;
+        margin-bottom: 20px;
+
+        h1 {
+            color: darkred;
+            font-weight: 800;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            &:hover {
+                transform: scale(0.9);
+                animation: blink 0.5s infinite alternate;
+            }
+
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+
+        }
+
+        .imgHi {
+            img:hover {
+                transform: scale(0.9);
+                animation: blink 0.5s infinite alternate;
+            }
+
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+
+        p {
+            color: white;
+            font-weight: 200;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        p:hover {
+            transform: scale(0.9);
+        }
+    }
+
+    .imgContainer {
+        padding-top: -100px;
+        border-radius: 6px;
+
+        img {
+            width: 300px;
+            border-radius: 6px;
+            height: 400px;
+        }
+
+        img:hover {
+            scale: 1.2;
+            z-index: 2;
+            transition: 1s ease-out;
+        }
+    }
+
+    .descriptionContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .description1 {
+
+            .segmentationImg {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 9px;
+
+                .imgHi {
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+
+        .description2 {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: white;
+
+            .imgLocation {
+                img {
+                    width: 22px;
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    transform: scale(0.9);
+                }
+            }
+
+            .location {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+        }
+
+        .description3 {
+            .imgSosmed {
+                display: flex;
+                gap: 12px;
+
+                img {
+                    width: 25px;
+                }
+
+            }
+
+            .findMeText {
+                color: white;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+                h3:hover {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 839px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 200px;
+        gap: 50px;
+        background-color: darkcyan;
+        height: 500px;
+    }
+
+    .description1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .description3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+    .imgContainer {
+        padding-top: -100px;
+
+        img {
+            width: 100%;
+            border-radius: 6px;
+        }
+    }
+}

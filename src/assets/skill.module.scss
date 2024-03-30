@@ -1,0 +1,123 @@
+.Inner {
+    background-color: darkcyan;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: -20px;
+
+    .lineContainer {
+        background-color: darkcyan;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    
+    
+        img {
+            width: 25px;
+            display: flex;
+            justify-content: center;
+            padding-left: 70px;
+        }
+      }
+
+
+
+    .skillWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -40px;
+        flex-direction: column;
+        gap: 40px;
+
+        .section1 {
+            text-align: center;
+            color: darkred;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: auto;
+            padding: 10px;
+
+            h2:hover {
+                transform: scale(0.9);
+                animation: blink 0.5s infinite alternate;
+            }
+
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .listContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            transition: transform 0.3s ease;
+
+
+
+            .card {
+                background-color: darkslategrey;
+                border-radius: 6px;
+                color: whitesmoke;
+                text-align: center;
+                width: 200px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                box-shadow: 5px 10px 10px 5px whitesmoke;
+
+
+
+                .imgContainer {
+                    padding-top: 10px;
+                    background-color: darkmagenta;
+                    border-radius: 6px;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 669px) {
+    
+    .skillWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 250px;
+        gap: 50px;
+        background-color: darkcyan;
+        height: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 839px) {
+    
+    .skillWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 150px;
+        gap: 50px;
+        background-color: darkcyan;
+        height: 500px;
+    }
+
+    .lineContainer {
+        padding-top: 200px;
+}
+
+}

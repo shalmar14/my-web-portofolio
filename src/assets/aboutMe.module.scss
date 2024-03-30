@@ -1,0 +1,136 @@
+.lineContainer {
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+
+    img {
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        padding-left: 70px;
+    }
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 50px;
+    background-color: darkcyan;
+    color: whitesmoke;
+
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    .imgContainer {
+        border-radius: 6px;
+        animation: fadeIn 1s ease-in-out;
+        transition: transform 0.3s ease;
+
+        img {
+            width: 400px;
+            height: 400px;
+            border-radius: 6px;
+            box-shadow: 4px 4px 18px 18px wheat;
+        }
+    }
+
+    .imgContainer:hover {
+        transform: rotate(360deg);
+    }
+
+    .descriptionWrapper {
+
+        .contentContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            hr {
+                width: 300px;
+            }
+
+            .header {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: darkred;
+                display: flex;
+                justify-content: center;
+
+                h2 {
+                    font-size: x-large;
+                }
+                
+                &:hover {
+                    transform: scale(0.9);
+                    animation: blink 0.5s infinite alternate;
+                }
+
+                @keyframes blink {
+                    0% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+
+            }
+        }
+
+        .contentContainer2 {
+            .paraghraf {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            
+            .paraghraf p:hover {
+                transform: scale(0.9);
+            }
+        }
+    }
+
+
+}
+
+
+@media only screen and (max-width: 839px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 300px;
+        gap: 50px;
+        background-color: darkcyan;
+        height: 500px;
+    }
+
+
+    .imgContainer {
+
+        img {
+            width: 100%;
+            box-shadow: 4px 4px 18px 18px wheat;
+        }
+    }
+
+    .lineContainer {
+        padding-top: 200px;
+}
+}

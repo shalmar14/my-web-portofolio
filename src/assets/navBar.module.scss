@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+}
+
+.navBarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: darkred;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    .imgContainer {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       
+        img {
+          width: 50px;
+        }
+       
+    }
+
+    .optionContainer {
+        display: flex;
+        justify-content: space-between; 
+        padding-left: 10px;
+        padding-top: 5px;
+        gap: 25px;
+        align-items: center;
+        
+        a {
+          color: white; 
+          text-decoration: none; 
+          position: relative; 
+          font-weight: bold;
+        }
+        
+        a::after {
+          content: ''; 
+          position: absolute; 
+          width: 0; 
+          height: 2px; 
+          background-color: white; 
+          bottom: -3px; 
+          left: 0; 
+          transition: width 0.3s ease; 
+        }
+        
+        a:hover::after {
+          width: 100%; 
+        }
+      
+        }
+        
+
+    }
+
+    @media only screen and (max-width: 669px) {
+      .navBarContainer {
+        display: flex;
+        flex-direction: row; 
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-between; 
+    
+        .optionContainer {
+          flex-direction: row; 
+          gap: 25px; 
+        }
+      }
+    }
+      

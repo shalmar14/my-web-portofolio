@@ -1,0 +1,16 @@
+.above {
+    background-color: darkcyan;
+    color: whitesmoke;
+    .aboveContainer {
+      display: flex;
+      justify-content: center;
+      height: 100px;
+
+      .lineContainer {
+        width: 100%;
+        img {
+            width: 300px;
+        }
+      }
+    }
+}

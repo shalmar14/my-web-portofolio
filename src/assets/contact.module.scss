@@ -1,0 +1,113 @@
+.Inner {
+    background-color: darkcyan;
+    padding-top: 25px;
+
+    .lineContainer {
+        background-color: darkcyan;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+    
+    
+        img {
+            width: 25px;
+            display: flex;
+            justify-content: center;
+            padding-left: 70px;
+        }
+      }
+
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:coral;
+
+        .textTop {
+            h2 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: darkred;
+            }
+
+            h2:hover {
+                transform: scale(0.9);
+                animation: blink 0.5s infinite alternate;
+            }
+
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+
+        }
+    
+        .identityContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .emailContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                
+                img {
+                    cursor: pointer;
+                }
+                
+                h2 {
+                    cursor: pointer;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+            }
+    
+            .phoneContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                
+    
+                img {
+                    cursor: pointer;
+                }
+    
+                h2 {
+                    cursor: pointer;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+            }
+    
+        }
+    
+        .footer {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .titleFooter {
+                p {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+            }
+    
+            .imgList {
+               display: flex;
+               gap: 12px;
+                img {
+                    width: 25px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
