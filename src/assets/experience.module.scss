@@ -95,3 +95,18 @@
         padding-top: 200px;
     }
 }
+
+@media only screen and (max-width: 444px) {
+
+    .experienceContainer {
+
+        .experienceWrapper {
+            width: 70%;
+        }
+    }
+
+    .lineContainer {
+        margin-top: 240px;
+        margin-bottom: 300px;
+    }
+}

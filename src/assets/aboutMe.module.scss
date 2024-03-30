@@ -133,4 +133,25 @@
     .lineContainer {
         padding-top: 200px;
 }
+
+}
+
+@media only screen and (max-width: 444px) {
+    .container {
+
+        .imgContainer {
+            img {
+               width: 100%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 429px) {
+    .lineContainer {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
 }

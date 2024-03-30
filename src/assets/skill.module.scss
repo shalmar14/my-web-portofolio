@@ -118,6 +118,27 @@
 
     .lineContainer {
         padding-top: 200px;
+        margin-top: 80px;
+}
+
+}
+
+@media only screen and (max-width: 444px) {
+    
+    .skillWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 150px;
+        gap: 50px;
+        background-color: darkcyan;
+        height: 500px;
+    }
+
+    .lineContainer {
+        margin-bottom: 300px;
+        margin-top: 150px;
 }
 
 }
