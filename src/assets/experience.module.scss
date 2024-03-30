@@ -110,3 +110,14 @@
         margin-bottom: 300px;
     }
 }
+
+@media only screen and (max-width: 542px) {
+
+    .experienceContainer {
+
+        .experienceWrapper {
+            width: 70%;
+        }
+    }
+
+}
