@@ -11,7 +11,7 @@
         justify-content: center;
         padding-left: 70px;
     }
-  }
+}
 
 .container {
     display: flex;
@@ -75,7 +75,7 @@
                 h2 {
                     font-size: x-large;
                 }
-                
+
                 &:hover {
                     transform: scale(0.9);
                     animation: blink 0.5s infinite alternate;
@@ -85,6 +85,7 @@
                     0% {
                         opacity: 1;
                     }
+
                     100% {
                         opacity: 0;
                     }
@@ -97,7 +98,7 @@
             .paraghraf {
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
-            
+
             .paraghraf p:hover {
                 transform: scale(0.9);
             }
@@ -132,7 +133,7 @@
 
     .lineContainer {
         padding-top: 200px;
-}
+    }
 
 }
 
@@ -141,10 +142,16 @@
 
         .imgContainer {
             img {
-               width: 100%;
+                width: 100%;
             }
         }
     }
 
 }
 
+@media only screen and (max-width: 400px) {
+    .lineContainer {
+        padding-bottom: 90px;
+    }
+
+}
